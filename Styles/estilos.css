@@ -1,0 +1,111 @@
+
+/* Comentarios en css  */
+
+*{
+    margin: 0;
+    padding: 0;
+    border-style:  solid; /*Linea Provicional*/
+    border-width: 0.5px;  /*Linea Provicional*/
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+ul {
+
+    list-style-type: none;
+
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.6;
+    font-family: 'Dancing Script', cursive;
+    color: mediumblue;
+    text-align: center;
+}
+
+@font-face{
+    font-family: "DMSerif";
+    src: url("Fonts/DMSerifDisplay-Regular.ttf");
+}
+
+
+
+#grilla {
+
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "Menu Central Publicidad"
+        "footer footer footer";
+
+    grid-template-columns: 12% 66% 20%;
+    grid-template-rows: 50px 500px 75px;
+
+
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+
+
+header {
+    grid-area: header;
+    font-family: "DMSerif";
+    color: darkgoldenrod;
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+
+}
+
+Menu {
+    grid-area: Menu;
+}
+
+
+Central{
+    grid-area: central;
+
+    
+
+}
+
+Publicidad{
+    grid-area:publicidad;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#Central{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#Menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+
+}
+
