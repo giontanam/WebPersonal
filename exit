@@ -1,0 +1,423 @@
+[33mcommit 292974001a5a6f80211b9e86194cd2fb6f252926[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Giovanny Montaña Medina <giovannymome@gmail.com>
+Date:   Sun Feb 13 22:26:12 2022 -0500
+
+    Primer Versión
+
+[1mdiff --git a/Blog.html b/Blog.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..997a63a[m
+[1m--- /dev/null[m
+[1m+++ b/Blog.html[m
+[36m@@ -0,0 +1,35 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Blog Personal</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="Styles/estilos.css">[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <div id="grilla">[m
+[32m+[m[32m            <header>[m
+[32m+[m[32m                <h1 class="titulo">Blog</h1>[m
+[32m+[m[32m            </header>[m
+[32m+[m[32m            <nav id="Menu">[m
+[32m+[m[32m                <ul>[m
+[32m+[m[32m                    <li> <a href="index.html"> Pagina Principal </a></li>[m
+[32m+[m[32m                    <li> <a href="ExperienciaLaboral.html">Experiencia Laboral</a> </li>[m
+[32m+[m[32m                    <li> <a href="Educacion.html"> Educación </a></li>[m
+[32m+[m[32m                    <li> <a href="Blog.html"> Blog </a> </li>[m
+[32m+[m[32m                    <li> <a href="Contactame.html">Contactame </a> </li>[m
+[32m+[m[32m                </ul>[m
+[32m+[m[32m            </nav>[m
+[32m+[m
+[32m+[m[32m            <article id="Central">[m
+[32m+[m[32m            <h2>Video Musical</h2>[m
+[32m+[m[32m            <iframe width="560" height="315" src="https://www.youtube.com/embed/EGj-53KQ3vg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>[m
+[32m+[m[32m            </article>[m[41m    [m
+[32m+[m[32m            <aside id="Publicidad"></aside>[m
+[32m+[m
+[32m+[m[32m            <footer>Copyright 2022</footer>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Contactame.html b/Contactame.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..23481b5[m
+[1m--- /dev/null[m
+[1m+++ b/Contactame.html[m
+[36m@@ -0,0 +1,60 @@[m
+[32m+[m[32m    <!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Blog Personal</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="Styles/estilos.css">[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <div id="grilla">[m
+[32m+[m[32m            <header>[m
+[32m+[m[32m                <h1 class="titulo">Contactame</h1>[m
+[32m+[m[32m            </header>[m
+[32m+[m
+[32m+[m[32m            <nav id="Menu">[m
+[32m+[m[32m                <ul>[m
+[32m+[m[32m                    <li> <a href="index.html"> Pagina Principal </a></li>[m
+[32m+[m[32m                    <li> <a href="ExperienciaLaboral.html">Experiencia Laboral</a> </li>[m
+[32m+[m[32m                    <li> <a href="Educacion.html"> Educación </a></li>[m
+[32m+[m[32m                    <li> <a href="Blog.html"> Blog </a> </li>[m
+[32m+[m[32m                    <li> <a href="Contactame.html">Contactame </a> </li>[m
+[32m+[m[32m                </ul>[m
+[32m+[m[32m            </nav>[m
+[32m+[m
+[32m+[m[32m            <article id="Central">[m
+[32m+[m[32m                <h2>Formulario</h2>[m
+[32m+[m[32m                <form action="" id="formulario">[m
+[32m+[m[32m                    <fieldset>[m
+[32m+[m[32m                        <legend>Formulario de Contácto</legend>[m
+[32m+[m[32m                            <label for="name">Su Nombre:</label>[m
+[32m+[m[32m                            <input type="text" placeholder="Ingrese su nombre" id="name">[m
+[32m+[m[32m                            <br><br>[m
+[32m+[m[32m                            <label for="apellido">Su Apellido:</label>[m
+[32m+[m[32m                            <input type="text" placeholder="apellido" id="apellido">[m
+[32m+[m[32m                            <br><br>[m
+[32m+[m[32m                            <label for="email" name="" >E-Mail</label>[m
+[32m+[m[32m                            <input type="email" placeholder="Ingrese su E-Mail" id="email">[m
+[32m+[m[32m                            <br><br>[m
+[32m+[m[32m                            <label for="telefono">Número de Teléfono Celular</label>[m
+[32m+[m[32m                            <input type="text" placeholder="Ingrese su numero de Celular" id="telefono">[m
+[32m+[m[32m                            <br><br>[m
+[32m+[m[32m                            <label for="comentarios">Ingresa tus Comentarios</label>[m
+[32m+[m[32m                            <br>[m
+[32m+[m[32m                            <textarea name="" id="comentarios" cols="30" rows="10"></textarea>[m
+[32m+[m[32m                            <br><br>[m
+[32m+[m[32m                            <input type="submit" name="" id="">[m[41m [m
+[32m+[m[32m                            <input type="reset">[m
+[32m+[m[32m                    </fieldset>[m
+[32m+[m[32m                </form>[m
+[32m+[m[32m            </article>[m
+[32m+[m
+[32m+[m[32m            <aside id="Publicidad"></aside>[m
+[32m+[m
+[32m+[m[32m            <footer>Copyright 2022</footer>[m[41m   [m
+[32m+[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Educacion.html b/Educacion.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4da93ce[m
+[1m--- /dev/null[m
+[1m+++ b/Educacion.html[m
+[36m@@ -0,0 +1,37 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Blog Personal</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="Styles/estilos.css">[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <div id="grilla">[m[41m   [m
+[32m+[m[32m            <header>[m
+[32m+[m[32m                <h1 class="titulo"> Profesional</h1>[m
+[32m+[m[32m            </header>[m
+[32m+[m
+[32m+[m[32m                <nav id="Menu">[m
+[32m+[m[32m                    <ul>[m
+[32m+[m[32m                        <li> <a href="index.html"> Pagina Principal </a></li>[m
+[32m+[m[32m                        <li> <a href="ExperienciaLaboral.html">Experiencia Laboral</a> </li>[m
+[32m+[m[32m                        <li> <a href="Educacion.html"> Educación </a></li>[m
+[32m+[m[32m                        <li> <a href="Blog.html"> Blog </a> </li>[m
+[32m+[m[32m                        <li> <a href="Contactame.html">Contactame </a> </li>[m
+[32m+[m[32m                    </ul>[m
+[32m+[m[32m                </nav>[m
+[32m+[m
+[32m+[m[32m            <article id="Central">[m
+[32m+[m
+[32m+[m[41m                [m
+[32m+[m[32m            </article>[m
+[32m+[m[32m            <aside id="Publicidad"></aside>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        <footer>Copyright 2022</footer>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/ExperienciaLaboral.html b/ExperienciaLaboral.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4335bb0[m
+[1m--- /dev/null[m
+[1m+++ b/ExperienciaLaboral.html[m
+[36m@@ -0,0 +1,51 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="Styles/estilos.css">[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <div id="grilla">[m
+[32m+[m[32m            <header>[m
+[32m+[m[32m                <h1 class="titulo">Experiencia Laboral</h1>[m
+[32m+[m[32m            </header>[m
+[32m+[m
+[32m+[m[32m            <nav id="Menu">[m
+[32m+[m[32m                <ul>[m
+[32m+[m[32m                    <li> <a href="index.html"> Pagina Principal </a></li>[m
+[32m+[m[32m                    <li> <a href="ExperienciaLaboral.html">Experiencia Laboral</a> </li>[m
+[32m+[m[32m                    <li> <a href="Educacion.html"> Educación </a></li>[m
+[32m+[m[32m                    <li> <a href="Blog.html"> Blog </a> </li>[m
+[32m+[m[32m                    <li> <a href="Contactame.html">Contactame </a> </li>[m
+[32m+[m[32m                </ul>[m
+[32m+[m[32m            </nav>[m
+[32m+[m
+[32m+[m[32m        <article id="Central">[m
+[32m+[m[32m            <h2>Trayectoria Laboral</h2>[m
+[32m+[m
+[32m+[m[32m            <table border="3">[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <th>Nombre Empresa</th>[m
+[32m+[m[32m                    <th>Cargo Desempeñado</th>[m
+[32m+[m[32m                    <th>Periodo Laboral</th>[m
+[32m+[m[32m                    <th>Sector de la empresa</th>[m
+[32m+[m[32m                    <th>Motivo Retiro</th>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <th>Organización Cardenas</th>[m
+[32m+[m[32m                    <th>Asistente Facturador</th>[m
+[32m+[m[32m                    <th>1990 -1998</th>[m
+[32m+[m[32m                    <th>Consumo Masivo</th>[m
+[32m+[m[32m                    <th>Ascenso a otro cargo</th>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m            </table>[m
+[32m+[m[32m        </article>[m
+[32m+[m[32m        <aside id="Publicidad"></aside>[m
+[32m+[m[32m        <footer>Copyright 2022</footer>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Fonts/DMSerifDisplay-Regular.ttf b/Fonts/DMSerifDisplay-Regular.ttf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cad975a[m
+Binary files /dev/null and b/Fonts/DMSerifDisplay-Regular.ttf differ
+[1mdiff --git a/Fonts/DancingScript-Regular.ttf b/Fonts/DancingScript-Regular.ttf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b215107[m
+Binary files /dev/null and b/Fonts/DancingScript-Regular.ttf differ
+[1mdiff --git a/Img/Facebook_f_logo_(2019).svg b/Img/Facebook_f_logo_(2019).svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d807aa9[m
+[1m--- /dev/null[m
+[1m+++ b/Img/Facebook_f_logo_(2019).svg[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m<svg xmlns="http://www.w3.org/2000/svg" width="1365.12" height="1365.12" viewBox="0 0 14222 14222"><circle cx="7111" cy="7112" r="7111" fill="#1977f3"/><path d="M9879 9168l315-2056H8222V5778c0-562 275-1111 1159-1111h897V2917s-814-139-1592-139c-1624 0-2686 984-2686 2767v1567H4194v2056h1806v4969c362 57 733 86 1111 86s749-30 1111-86V9168z" fill="#fff"/></svg>[m
+\ No newline at end of file[m
+[1mdiff --git a/Img/Objetivo.jpg b/Img/Objetivo.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4de51d6[m
+Binary files /dev/null and b/Img/Objetivo.jpg differ
+[1mdiff --git a/Img/facebook.jpg b/Img/facebook.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..946bbb8[m
+Binary files /dev/null and b/Img/facebook.jpg differ
+[1mdiff --git a/Img/instagram.png b/Img/instagram.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d9d24c1[m
+Binary files /dev/null and b/Img/instagram.png differ
+[1mdiff --git a/Img/linkeding.png b/Img/linkeding.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3fbdd62[m
+Binary files /dev/null and b/Img/linkeding.png differ
+[1mdiff --git a/Img/youtube.png b/Img/youtube.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..76078a9[m
+Binary files /dev/null and b/Img/youtube.png differ
+[1mdiff --git a/Styles/estilos.css b/Styles/estilos.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5b1e415[m
+[1m--- /dev/null[m
+[1m+++ b/Styles/estilos.css[m
+[36m@@ -0,0 +1,111 @@[m
+[32m+[m
+[32m+[m[32m/* Comentarios en css  */[m
+[32m+[m
+[32m+[m[32m*{[m
+[32m+[m[32m    margin: 0;[m
+[32m+[m[32m    padding: 0;[m
+[32m+[m[32m    border-style:  solid; /*Linea Provicional*/[m
+[32m+[m[32m    border-width: 0.5px;  /*Linea Provicional*/[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32m@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');[m
+[32m+[m
+[32m+[m[32mul {[m
+[32m+[m
+[32m+[m[32m    list-style-type: none;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mli {[m
+[32m+[m[32m    list-style-type: none;[m
+[32m+[m[32m    text-decoration: none;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mp {[m
+[32m+[m[32m    line-height: 1.6;[m
+[32m+[m[32m    font-family: 'Dancing Script', cursive;[m
+[32m+[m[32m    color: mediumblue;[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m@font-face{[m
+[32m+[m[32m    font-family: "DMSerif";[m
+[32m+[m[32m    src: url("Fonts/DMSerifDisplay-Regular.ttf");[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m#grilla {[m
+[32m+[m
+[32m+[m[32m    display: grid;[m
+[32m+[m[32m    grid-template-areas:[m[41m [m
+[32m+[m[32m        "header header header"[m
+[32m+[m[32m        "Menu Central Publicidad"[m
+[32m+[m[32m        "footer footer footer";[m
+[32m+[m
+[32m+[m[32m    grid-template-columns: 12% 66% 20%;[m
+[32m+[m[32m    grid-template-rows: 50px 500px 75px;[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    grid-column-gap: 10px;[m
+[32m+[m[32m    grid-row-gap: 10px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32mheader {[m
+[32m+[m[32m    grid-area: header;[m
+[32m+[m[32m    font-family: "DMSerif";[m
+[32m+[m[32m    color: darkgoldenrod;[m
+[32m+[m[32m    background-color: skyblue;[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    align-items: center;[m
+[32m+[m[32m    justify-items: center;[m
+[32m+[m[32m    justify-content: center;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mMenu {[m
+[32m+[m[32m    grid-area: Menu;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32mCentral{[m
+[32m+[m[32m    grid-area: central;[m
+[32m+[m
+[32m+[m[41m    [m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mPublicidad{[m
+[32m+[m[32m    grid-area:publicidad;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mfooter{[m
+[32m+[m[32m    grid-area: footer;[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    justify-content: center;[m
+[32m+[m[32m    align-items: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32m#Central{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    flex-direction: column;[m
+[32m+[m[32m    justify-content: space-evenly;[m
+[32m+[m[32m    align-items: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#Menu{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    align-items: center;[m
+[32m+[m[32m    justify-content: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32ma {[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    justify-content: center;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m
+[1mdiff --git a/index.html b/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9da9ad3[m
+[1m--- /dev/null[m
+[1m+++ b/index.html[m
+[36m@@ -0,0 +1,46 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="es">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Blog Personal</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="Styles/estilos.css">[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <div id="grilla">[m
+[32m+[m[32m            <header>[m
+[32m+[m[32m                <h1>Mi Blog Personal</h1>[m
+[32m+[m[32m            </header>[m
+[32m+[m[32m            <nav id="Menu">[m
+[32m+[m[32m                <ul>[m
+[32m+[m[32m                    <li> <a href="index.html"> Pagina Principal </a></li>[m
+[32m+[m[32m                    <li> <a href="ExperienciaLaboral.html">Experiencia Laboral</a> </li>[m
+[32m+[m[32m                    <li> <a href="Educacion.html"> Educación </a></li>[m
+[32m+[m[32m                    <li> <a href="Blog.html"> Blog </a> </li>[m
+[32m+[m[32m                    <li> <a href="Contactame.html">Contactame </a> </li>[m
+[32m+[m[32m                </ul>[m
+[32m+[m[32m            </nav>[m
+[32m+[m
+[32m+[m[32m            <article id="Central">[m
+[32m+[m[32m            <h2>GIOVANNY MONTAÑA MEDINA</2>[m
+[32m+[m[32m            <h2>Titulado como Técnico en sistemas</h2>[m
+[32m+[m[32m            <h2>Con experiencia y ejerciendo como[m
+[32m+[m[32m                Analista Funcional de Información</h2>[m
+[32m+[m[32m            <h2>Disfruto resolver problemas, me concidero[m
+[32m+[m[32m                innovador, apasionado y multidisciplinario en el[m
+[32m+[m[32m                area informática.</h2>[m
+[32m+[m[41m [m
+[32m+[m[32m            </article>[m
+[32m+[m
+[32m+[m[32m            <aside id="Publicidad"></aside>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        <footer>Copyright 2022</footer>[m
+[32m+[m
+[32m+[m[32m    </div>[m[41m       [m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+[32m+[m
+[32m+[m[32m<!--   hola comenta -->[m
+\ No newline at end of file[m
