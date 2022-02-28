@@ -62,14 +62,9 @@ footer{
     grid-area: footer;
     background-color: #DEEBF7;
     border-style: solid;
-    border-width: 5;
-    
+   
 }
 
-#Contend {
-    width: 50%;
-
-}
 
 
 
@@ -102,7 +97,7 @@ footer{
             "footer footer";
 
         grid-template-columns: 30% 70%;
-        grid-template-rows: 30% 70%;
+        grid-template-rows: 15% 100% 10% 30%;
 
 
         grid-column-gap: 10px;
@@ -126,8 +121,31 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        align-content: center;
+
+        flex-direction: column;
+
+        border-width: 5px;
+  
     }
 
+
+
+    
+    #SocialMedia{
+
+        display: flex;
+
+ 
+        justify-content: space-evenly;
+
+
+        align-items: center;
+        background-size: contain;
+        height: 40px;
+        width: 500px;
+ 
+    }
 
     #Central{
         display: flex;
@@ -160,7 +178,7 @@ footer{
                 "footer footer footer";
 
             grid-template-columns: 12% 66% 20%;
-            grid-template-rows: 50px 500px 75px;
+            grid-template-rows: 50px 500px 100px;
 
 
             grid-column-gap: 10px;
@@ -180,11 +198,7 @@ footer{
         }
 
 
-        footer{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+
 
 
         #Central{
@@ -200,11 +214,6 @@ footer{
             justify-content: center;
         }
 
-        a {
-      
-            justify-content: left;
-
-
-        }
+  
 
 }
