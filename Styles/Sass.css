@@ -1,0 +1,151 @@
+/* Comentarios en css  */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  color: #2596be;
+}
+
+p {
+  line-height: 1.6;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "DMSerif";
+  src: url("Fonts/DMSerifDisplay-Regular.ttf");
+}
+
+ul, li {
+  border-style: solid;
+  /*Linea Provicional*/
+  border-width: 0.5px;
+  /*Linea Provicional*/
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#grilla {
+  display: grid;
+}
+
+header {
+  grid-area: header;
+}
+
+Menu {
+  grid-area: Menu;
+}
+
+Central {
+  grid-area: central;
+}
+
+Publicidad {
+  grid-area: publicidad;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #DEEBF7;
+  border-style: solid;
+}
+
+@media screen and (min-width: 320px) {
+  #grilla {
+    grid-template-areas: "header" "Publicidad" "Menu" "Central" "footer";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199) {
+  #grilla {
+    grid-template-areas: "header header" "Menu Menu" "Central Publicidad" "footer footer";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 15% 100% 10% 30%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  header {
+    font-family: "DMSerif";
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    border-width: 5px;
+  }
+  footer #SocialMedia {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-size: contain;
+    height: 40px;
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #grilla {
+    grid-template-areas: "header header header" "Menu Central Publicidad" "footer footer footer";
+    grid-template-columns: 12% 66% 20%;
+    grid-template-rows: 50px 500px 100px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  header {
+    font-family: "DMSerif";
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  header #Titulo {
+    width: 80%;
+    background-color: skyblue;
+    border-radius: 60px;
+    color: #DEEBF7;
+  }
+  header #Titulo:hover {
+    background-color: lightblue;
+  }
+  #Central {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #Menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    border-width: 5px;
+  }
+  footer #SocialMedia {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    width: 500px;
+  }
+}
