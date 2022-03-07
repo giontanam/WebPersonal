@@ -3,18 +3,61 @@
 *{
     margin: 0;
     padding: 0;
-    color: rgb(37, 150, 190);
-
+    // border-color: red;
+    // border-style: dotted;
+    // border-width: 1px;
 }
 
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 
-p {
+p, h2 {
     line-height: 1.6;
-    font-family: 'Dancing Script', cursive;
+    //font-family: 'Dancing Script', cursive;
     text-align: center;
+    color: white;
+    color: rgb(37, 150, 190);
+}
+
+h2 {
+color: rgb(37, 150, 190);
+}
+
+.Video{
+    height: auto;
+    width: 100%;
+}
+
+
+ .Articulos{
+    padding-top:5px;
+    padding-left: 3px;
+
+    width: 350px;
+    height: 250px;
+    font-size: 12px;
+    border-style: solid;
+    margin: 5px;
+    border-radius: 20px;
+    border-width: 1px;
+ }
+
+.BlogTitulo{
+    text-align: left;
+    text-decoration: underline;
+}
+.BlogSubtitulo{
+    text-align: left;
+    color: gray;
+}
+
+#ContainerArticulos {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: auto;
+    height: 800px;
 }
 
 @font-face{
@@ -23,13 +66,33 @@ p {
 }
 
 
-ul, li {
-    border-style:  solid; /*Linea Provicional*/
-    border-width: 0.5px;  /*Linea Provicional*/
-    list-style-type: none;
-    text-decoration: none;
-   
-   
+ul {
+    //border-style: solid;
+    
+    
+        li{
+        text-decoration: none;
+        list-style-type: none;
+        //border-style:  solid; /*Linea Provicional*/
+        //border-width: 0.5px;  /*Linea Provicional*/
+        
+        border-radius: 20px;
+        margin: 5px auto 5px auto;
+        color: rgb(37, 150, 190);
+       
+                &:hover{
+                    background-color: skyblue;
+                    color: #DEEBF7;
+                    border-radius: 10px;
+                }
+
+
+
+        }
+
+
+
+
 }
 
 
@@ -59,8 +122,9 @@ Publicidad{
 
 footer{
     grid-area: footer;
-    background-color: #DEEBF7;
-    border-style: solid;
+    //
+    
+    
    
 }
 
@@ -85,65 +149,8 @@ footer{
 
 
 
-@media screen and (min-width:768px) and ( max-width:1199) {
 
-    #grilla {
-        grid-template-areas: 
-            "header header"
-            "Menu Menu"
-            "Central Publicidad"
-            "footer footer";
-
-        grid-template-columns: 30% 70%;
-        grid-template-rows: 15% 100% 10% 30%;
-
-
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-    }
-
-
-    header {
-        font-family: "DMSerif";
- 
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        justify-content: center;
-
-
-    }
-
-
-    footer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-
-        flex-direction: column;
-
-        border-width: 5px;
-
-        #SocialMedia{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            background-size: contain;
-            height: 40px;
-            width: 500px;
-         }
-
-    }
-
-
-
-   
-
-}
-
-
-@media screen and (min-width:1200px){
+@media screen and (min-width:768px) {
 
         #grilla {
             grid-template-areas: 
@@ -151,10 +158,10 @@ footer{
                 "Menu Central Publicidad"
                 "footer footer footer";
 
-            grid-template-columns: 12% 66% 20%;
-            grid-template-rows: 50px 500px 100px;
+            grid-template-columns: 20% 55% 20%;
+            grid-template-rows: 9% 76% 15%;
 
-            grid-column-gap: 10px;
+            grid-column-gap: 5px;
             grid-row-gap: 10px;
         }
 
@@ -171,12 +178,14 @@ footer{
  
                 #Titulo{
                     width: 80%;
-                    background-color: skyblue;
+                    background-color: #98CCFD;
                     border-radius: 60px;
-                    color: #DEEBF7;
+                    color: white;
+                    border-width: 1px;
 
                     &:hover{
                         background-color:lightblue;
+                        box-shadow: #98CCFD;
                     }
 
                 }
@@ -187,7 +196,7 @@ footer{
  
 
 
-        #Central{
+        #ContainerArticulos{
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -198,8 +207,10 @@ footer{
             display: flex;
             align-items: center;
             justify-content: center;
-
-
+            
+         //   border-style: solid;
+            
+            
         }
     
         a {
@@ -210,14 +221,31 @@ footer{
 
         
     footer{
-        display: flex;
+        display:flex;
         justify-content: center;
-        align-items: center;
-        align-content: center;
+        
 
-        flex-direction: column;
+        #PieDePagina{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+    
+            flex-direction: column;
+    
+            border-width: 1px;
+            background-color: #98CCFD;
 
-        border-width: 5px;
+            border-style: solid;
+            border-radius: 20px;
+            border-color: blue;
+
+            width: 80%;
+            height: 90px;
+            
+        }
+
+
 
 
         #SocialMedia{
