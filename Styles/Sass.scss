@@ -33,25 +33,7 @@ color: rgb(37, 150, 190);
 }
 
 
- .Articulos{
-    padding-top:5px;
-    padding-left: 3px;
-
-    width: 350px;
-    height: 250px;
-    font-size: 12px;
-    border-style: solid;
-    margin: 5px;
-    border-radius: 20px;
-    border-width: 1px;
-
-        &:hover{
-            border-color: blue;
-            box-shadow: 1em 1em #98CCFD;
-        }
-
-
- }
+ 
 
 .BlogTitulo{
     text-align: left;
@@ -72,7 +54,6 @@ color: rgb(37, 150, 190);
 
 ul {
     //border-style: solid;
-    
     
         li{
         text-decoration: none;
@@ -104,7 +85,10 @@ ul {
 
 
 
-#grilla {display: grid;}
+#grilla {
+    display: grid;
+
+}
 
 header {
     grid-area: header;
@@ -151,14 +135,91 @@ footer{
 
     #ContainerArticulos {
         display:grid;
+        align-items: center;
         grid-template-columns: repeat(1, 1fr);
-        gap: 1em;
+        gap: 1px;
+        
+             
 
+        
 
+         }
 
+         .Articulos{
+            
+            
+            padding-top:5px;
+            padding-left: 3px;
+        
+            width: 90%;
+            height: 220px;
+            font-size: 12px;
+            border-style: solid;
+            margin: 5px;
+            border-radius: 20px;
+            border-width: 1px;
+        
+                &:hover{
+                    border-color: blue;
+                    box-shadow: 1em 1em #98CCFD;
+                }
+        
+        
+         }
+
+         footer{
+            display:flex;
+            
+            //justify-content: center;
+            align-items: center;
+
+    
+            #PieDePagina{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+        
+                flex-direction: column;
+        
+                border-width: 1px;
+                background-color: #98CCFD;
+    
+                border-style: solid;
+                border-radius: 20px;
+                border-color: blue;
+    
+                width: 90%;
+                height: 90px;
+                
+            }
+    
+       
+            #SocialMedia{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                height:30px;
+                width:200px;
+             }
+
+             a {
+                display: flex;
+                justify-content: center;
+        
+            }
+    
+        }
 }
 
-}
+
+
+   
+
+
+
+
 
 
 
@@ -213,6 +274,9 @@ footer{
             display:grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 5px;
+            height :auto;
+
+
             
          }
     
@@ -226,6 +290,26 @@ footer{
             
             
         }
+
+        .Articulos{
+            padding-top:5px;
+            padding-left: 3px;
+        
+            width: 350px;
+            height: 250px;
+            font-size: 12px;
+            border-style: solid;
+            margin: 5px;
+            border-radius: 20px;
+            border-width: 1px;
+        
+                &:hover{
+                    border-color: blue;
+                    box-shadow: 1em 1em #98CCFD;
+                }
+        
+        
+         }
     
         a {
             display: flex;

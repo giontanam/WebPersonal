@@ -22,23 +22,6 @@ h2 {
   width: 100%;
 }
 
-.Articulos {
-  padding-top: 5px;
-  padding-left: 3px;
-  width: 350px;
-  height: 250px;
-  font-size: 12px;
-  border-style: solid;
-  margin: 5px;
-  border-radius: 20px;
-  border-width: 1px;
-}
-
-.Articulos:hover {
-  border-color: blue;
-  box-shadow: 1em 1em #98CCFD;
-}
-
 .BlogTitulo {
   text-align: left;
   text-decoration: underline;
@@ -101,8 +84,54 @@ footer {
   }
   #ContainerArticulos {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1em;
+    gap: 1px;
+  }
+  .Articulos {
+    padding-top: 5px;
+    padding-left: 3px;
+    width: 90%;
+    height: 220px;
+    font-size: 12px;
+    border-style: solid;
+    margin: 5px;
+    border-radius: 20px;
+    border-width: 1px;
+  }
+  .Articulos:hover {
+    border-color: blue;
+    box-shadow: 1em 1em #98CCFD;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+  }
+  footer #PieDePagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    border-width: 1px;
+    background-color: #98CCFD;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: blue;
+    width: 90%;
+    height: 90px;
+  }
+  footer #SocialMedia {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 30px;
+    width: 200px;
+  }
+  footer a {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -137,11 +166,27 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
+    height: auto;
   }
   #Menu {
     display: flex;
     align-items: initial;
     justify-content: center;
+  }
+  .Articulos {
+    padding-top: 5px;
+    padding-left: 3px;
+    width: 350px;
+    height: 250px;
+    font-size: 12px;
+    border-style: solid;
+    margin: 5px;
+    border-radius: 20px;
+    border-width: 1px;
+  }
+  .Articulos:hover {
+    border-color: blue;
+    box-shadow: 1em 1em #98CCFD;
   }
   a {
     display: flex;
