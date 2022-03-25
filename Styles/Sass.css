@@ -1,5 +1,6 @@
 /* Comentarios en css  */
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700");
 * {
   margin: 0;
   padding: 0;
@@ -18,87 +19,69 @@ p {
   font-size: 18px;
 }
 
-.linea-tiempo {
-  position: relative;
-  width: 500px;
-  max-width: 95vw;
-  height: 100%;
-  font-family: Arial;
-  color: #0004ff;
-}
-
-.momento {
-  position: relative;
-  width: 45%;
-  box-sizing: border-box;
-}
-
-.momento:nth-child(even) {
-  left: 55%;
-}
-
-.linea-tiempo::before {
-  content: '';
-  position: absolute;
-  width: 3px;
-  background-color: lightskyblue;
-  left: 50%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.momento::after {
-  content: '';
-  position: absolute;
-  top: calc(50% + 10px);
-  right: calc(-11.11% - 11.5px);
-  height: 20px;
-  width: 20px;
-  background-color: lightskyblue;
-  border-radius: 50%;
-}
-
-.momento:nth-child(even)::after {
-  left: calc(-11.11% - 8.5px);
-}
-
-.momento h3 {
-  margin: 10px 0px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.momento .descripcion {
-  background-color: lightskyblue;
-  border-radius: 10px;
-  padding: 10px;
-  line-height: 22px;
+body {
   font-size: 14px;
+  line-height: 1.5;
 }
 
-.momento .descripcion::after {
-  content: '';
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: .8rem;
+}
+
+.container {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  padding: 3em 2em 2em;
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item p {
+  font-size: 1rem;
+}
+
+.timeline-item::before {
+  content: attr(date-is);
   position: absolute;
-  right: -10px;
-  top: calc(50% + 10px);
-  height: 0;
-  width: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 12px solid lightskyblue;
+  left: 2em;
+  font-weight: bold;
+  top: 1em;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: .785rem;
 }
 
-.momento:nth-child(even) .descripcion {
-  background-color: lightskyblue;
-  color: #0004ff;
+.timeline-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -7px;
+  border-radius: 10px;
+  content: '';
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: white;
 }
 
-.momento:nth-child(even) .descripcion::after {
-  left: -10px;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 12px solid lightskyblue;
-  border-left: none;
+.timeline-item:last-child {
+  border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
 }
 
 h2 {
