@@ -84,6 +84,23 @@ p {
   border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
 }
 
+#Container2 {
+  display: flex;
+  justify-items: center;
+}
+
+#Flotante {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+#Flotante nav {
+  position: fixed;
+  justify-self: center;
+  margin-left: 25px;
+}
+
 h2 {
   color: #2596be;
 }
@@ -208,9 +225,9 @@ footer {
 
 @media screen and (min-width: 768px) {
   #grilla {
-    grid-template-areas: "header header header" "Menu Central Publicidad" "footer footer footer";
-    grid-template-columns: 20% 55% 20%;
-    grid-template-rows: 9% 85% 15%;
+    grid-template-areas: "header header header" "Menu Central Central" "footer footer footer";
+    grid-template-columns: 180px 55% 20%;
+    grid-template-rows: 150px 85% 15%;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
   }
@@ -237,11 +254,9 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
-    align-content: center;
   }
   #Menu {
     display: flex;
-    align-items: initial;
     justify-content: center;
   }
   .Articulos {
@@ -282,9 +297,6 @@ footer {
     border-color: blue;
     width: 80%;
     height: 90px;
-  }
-  footer #formulario {
-    width: 50px;
   }
   footer #SocialMedia {
     display: flex;

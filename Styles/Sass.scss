@@ -113,6 +113,27 @@ $border-color: rgba(black, .3);
 //Linea del Tiempo
 
 
+#Container2{
+    display: flex;
+    justify-items: center;
+}
+
+
+#Flotante {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+
+    
+    nav {
+        position: fixed;
+        
+        justify-self: center;
+        margin-left: 25px;
+    }
+    
+}
+
 
 
 h2 {
@@ -315,11 +336,11 @@ footer{
         #grilla {
             grid-template-areas: 
                 "header header header"
-                "Menu Central Publicidad"
+                "Menu Central Central"
                 "footer footer footer";
 
-            grid-template-columns: 20% 55% 20%;
-            grid-template-rows: 9% 85% 15%;
+            grid-template-columns: 180px 55% 20%;
+            grid-template-rows: 150px 85% 15%;
 
             grid-column-gap: 5px;
             grid-row-gap: 5px;
@@ -361,7 +382,7 @@ footer{
             grid-template-columns: repeat(2, 1fr);
             gap: 5px;
             //height :auto;
-            align-content: center;
+
             
          }
 
@@ -369,7 +390,6 @@ footer{
     
         #Menu{
             display: flex;
-            align-items: initial;
             justify-content: center;
             
             
@@ -434,9 +454,7 @@ footer{
             
         }
 
-        #formulario{
-            width: 50px;
-        }
+
 
   
 
